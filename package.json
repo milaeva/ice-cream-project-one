@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://milaeva.github.io/ice/.",
+  "homepage": "https://milaeva.github.io/ice-cream-project-one/.",
   "scripts": {
     "dev": "parcel src/*.html",
     "build": "parcel build src/*.html",
-    "predeploy": "npm run build -- --public-url /ice/",
+    "predeploy": "npm run build -- --public-url /ice-cream-project-one/",
     "deploy": "gh-pages -d dist"
   },
   "repository": {
