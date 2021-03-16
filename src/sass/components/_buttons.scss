@@ -1,0 +1,24 @@
+.buttons {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+    border-style: none;
+    border-radius: 20px;
+    min-width: 102px;
+    outline: 0;
+    padding: 7px 10px;
+    font-weight: 400;
+    line-height: 1.3;
+    transition: all vav(--transition-time) var(--time-function);
+    -webkit-transition: all vav(--transition-time) var(--time-function);
+    -moz-transition: all vav(--transition-time) var(--time-function);
+    -ms-transition: all vav(--transition-time) var(--time-function);
+    -o-transition: all vav(--transition-time) var(--time-function);
+}
+
+.btn-red-hover:hover,
+.btn-red-hover:focus{
+    background-color: var(--btn-red-hover);    
+}

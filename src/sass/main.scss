@@ -1,0 +1,25 @@
+/* UTILS */
+
+@import './utils/variables';
+@import './utils/visually-hidden';
+// BASE
+@import './base/common';
+@import './base/container';
+// COMPONENTS
+@import './components/logo';
+@import './components/buttons';
+@import './components/title-labels';
+@import './components/titles';
+@import './components/sub-title';
+@import './components/social-list';
+@import './components/burger-btn';
+// LAYOUT
+@import './layout/header';
+@import './layout/hero';
+@import './layout/products';
+@import './layout/about';
+@import './layout/advantages';
+@import './layout/gallery';
+@import './layout/customer-reviews';
+@import './layout/contacts';
+@import './layout/footer';

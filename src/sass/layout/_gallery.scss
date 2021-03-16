@@ -1,0 +1,14 @@
+@media screen and (min-width: 1280px) {
+  .gallery .container {
+    padding: 0 15px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .gallery {
+    // margin-top: -44px;
+  }
+}
+.gallery {
+  background: linear-gradient(#fff5f6, #fff5f6 40%, transparent 40%);
+  
+}

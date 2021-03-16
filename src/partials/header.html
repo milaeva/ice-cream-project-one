@@ -1,0 +1,193 @@
+<header id="header">
+  <div class="header-position container">
+    <div class="container header" >
+      <picture class="logo">
+        <a href="#">
+          <source
+            srceset="./images/hero/desktop/logo@1x.webp 1x, ./images/hero/desktop/logo@2x.webp 2x"
+            media="(min-width: 1280px)"
+          />
+          <source
+            srceset="./images/hero/desktop/logo@1x.png 1x, ./images/hero/desktop/logo@2x.png 2x"
+            media="(min-width: 1280px)"
+          />
+          <source
+            srceset="./images/hero/tablet/logo@1x.webp 1x, ./images/hero/tablet/logo@2x.webp 2x"
+            media="(min-width: 768px)"
+          />
+          <source
+            srceset="./images/hero/tablet/logo@1x.png 1x, ./images/hero/tablet/logo@2x.png 2x"
+            media="(min-width: 768px)"
+          />
+          <source
+            srceset="./images/hero/mobile/logo@1x.webp 1x, ./images/hero/mobile/logo@2x.webp 2x"
+            media="(min-width: 480px)"
+          />
+          <source
+            srceset="./images/hero/mobile/logo@1x.png 1x, ./images/hero/mobile/logo@2x.png 2x"
+            media="(min-width: 480px)"
+          />
+          <source
+            srceset="./images/hero/mobile/logo@1x.png 1x, ./images/hero/mobile/logo@2x.png 2x"
+            media="(max-width: 480px)"
+          />
+          <img src="./images/hero/desktop/logo@1x.png" alt="Logo" />
+        </a>
+      </picture>
+      <div class="menu">
+        <a href="#" class="menu__button"> <span class="menu__lines"></span> </a>
+        <nav class="menu__nav">
+          <button class="buy-now " type="button" data-modal-open>Buy now
+            <svg class="arrow">
+              <path
+                d="M1.61633 1L6.04401 5L1.61633 9"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <ul class="menu-list">
+            <li class="menu-list-item">
+              <a href="#header" class="menu__link">Home</a>
+            </li>
+            <li class="menu-list-item">
+              <a href="#advantages" class="menu__link">About us</a>
+            </li>
+            <li class="menu-list-item">
+              <a href="#about" class="menu__link">How it’s made?</a>
+            </li>
+            <li class="menu-list-item">
+              <a href="#products" class="menu__link">Our products</a>
+            </li>
+            <li class="menu-list-item">
+              <a href="#contacts" class="menu__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="menu__overlay"></div>
+      </div>
+      <button class="buy-now tablet " type="button" data-modal-open-tab> Buy now<svg class="arrow">
+          <path
+            d="M1.61633 1L6.04401 5L1.61633 9"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
+      
+      <!-- Модальное окно заказа -->
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button
+            class="close-button"
+            aria-label="Закрыть окно заказа услуг"
+            data-modal-close
+          ></button>
+          <form action="#">
+            <p class="modal-title">Place your Order here</p>
+            <ul class="contacts-input">
+              <li class="contacts-input-item">
+                <label class="input-title">
+                  Name <input type="text" value="" name="name" required />
+                </label>
+              </li>
+              <li class="contacts-input-item">
+                <label class="input-title">
+                  Phone Number
+                  <input
+                    type="tel"
+                    value=""
+                    name="tel"
+                    required
+                    pattern="[\+]\d{2}[\(]\d{1}[\)]\s\d{3}[\-]\d{3}[\-]\d{3}"
+                    minlength="18"
+                    maxlength="18"
+                    placeholder="+61(0)-xxx-xxx-xxx"
+                  />
+                  <span class="form__error"
+                    >Telephone format +61(0) xxx-xxx-xxx</span
+                  >
+                </label>
+              </li>
+              <li class="contacts-input-item">
+                <label class="input-title"
+                  >Delivery Address
+                  <textarea
+                    class="delivery-address"
+                    name="delivery-address"
+                    placeholder="State, City, Street Address"
+                  ></textarea>
+                </label>
+              </li>
+            </ul>
+            <fieldset class="order-form">
+              <legend class="order-form-title">
+                Choose product and quantity
+              </legend>
+              <input
+                class="order-product"
+                type="checkbox"
+                name="product"
+                value=""
+                id="order-product1"
+              />
+              <label class="order-form-item" for="order-product1">
+                Ice Cream
+                <input
+                  class="order-number"
+                  type="number"
+                  name="quantity"
+                  min="0"
+                  max="150"
+                  step="1"
+                  value="0"
+                />
+              </label>
+              <input
+                class="order-product"
+                type="checkbox"
+                name="product"
+                value=""
+                id="order-product2"
+              />
+              <label class="order-form-item" for="order-product2">
+                Ice Coffee
+                <input
+                  class="order-number"
+                  type="number"
+                  name="quantity"
+                  min="0"
+                  max="150"
+                  step="1"
+                  value="0"
+                />
+              </label>
+              <input
+                class="order-product"
+                type="checkbox"
+                name="product"
+                value=""
+                id="order-product3"
+              />
+              <label class="order-form-item" for="order-product3">
+                Milkshakes
+                <input
+                  class="order-number"
+                  type="number"
+                  name="quantity"
+                  min="0"
+                  max="150"
+                  step="1"
+                  value="0"
+                />
+              </label>
+              <button class="order-button btn" type="submit">Order</button>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

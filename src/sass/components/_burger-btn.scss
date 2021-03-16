@@ -1,0 +1,64 @@
+@media screen and (max-width: 767px) {
+  .burger-btn {
+    position: absolute;
+    display: block;
+    z-index: 100;
+    top: 25px;
+    right: 20px;
+    height: 12px;
+    width: 20px;
+    outline: none;
+    border-style: none;
+    box-sizing: border-box;
+    transition: background-color 200ms;
+    background-color: var(--sub-title-ellipse);
+    z-index: 125;
+  }
+  .burger-btn.is-open {
+    transition: background-color 200ms;
+    background-color: var(--background-mobile-menu);
+  }
+  .burger-btn::after,
+  .burger-btn::before,
+  .burger-btn--span {
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 20px;
+    right: 0px;
+    transition: all 250ms;
+    background-color: var(--color-accent);
+    
+  }
+  .burger-btn:focus::after,
+  .burger-btn:hover::before,
+  .burger-btn:focus::after,
+  .burger-btn:hover::before,
+  .burger-btn--span:focus,
+  .burger-btn--span:hover {
+      background-color: #FFF;
+  }
+  .burger-btn::after {
+    top: 0%;
+    right: 0%;
+  }
+  .burger-btn::before {
+    bottom: 0%;
+    right: 0%;
+  }
+  .burger-btn.is-open::after {
+    bottom: 0%;
+    transform: rotate(45deg);
+}
+  .burger-btn.is-open::before {
+    top: 0%;
+    transform: rotate(-45deg);
+    
+  }
+  .burger-btn.is-open .burger-btn--span {
+    opacity: 0;
+  }
+}
+.burger-btn.is-open{
+  position: fixed;
+}

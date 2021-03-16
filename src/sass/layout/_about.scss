@@ -1,0 +1,169 @@
+.about {
+  margin: 0 auto;
+  padding-top: 125px;
+  padding-bottom: 39px;
+  background-color: var(--background-tradition-contacts);
+
+  @media screen and (max-width: 767px) {
+    background-image: url(../images/about/mobile/spray@1x.png);
+    background-repeat: no-repeat;
+    background-position: left 0px  bottom 100px;
+    background-size: contain;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+    screen and (min-resolution: 192dpi) and (max-width: 767px),
+    screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    background-image: url(../images/about/mobile/spray@2x.png);
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 130px;
+    padding-bottom: 66px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 125px;
+    padding-bottom: 39px;
+    background-image: url(../images/about/desktop/spray@1x.png);
+    background-repeat: no-repeat;
+    background-position: left 50% top 342px;
+  }
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+    screen and (min-resolution: 192dpi) and (min-width: 1200px),
+    screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+    background-image: url(../images/about/desktop/spray@2x.png);
+  }
+}
+
+.about .sub-title {
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.154;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+    line-height: 1.133;
+  }
+}
+
+.about .title {
+  margin-bottom: 26px;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 50px;
+    font-size: 48px;
+    line-height: 1.146;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 55px;
+    font-size: 58px;
+    line-height: 1.138;
+    letter-spacing: 0.06em;
+  }
+}
+
+.about-box {
+  margin: 0 auto;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  @media screen and (min-width: 1200px) {
+    align-items: center;
+  }
+}
+
+.about-tumb {
+  width: 100%;
+  margin-bottom: 46px;
+
+  @media screen and (min-width: 768px) {
+    width: calc((100%-17px) / 2);
+    margin-right: 17px;
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 516px;
+    margin-right: 74px;
+  }
+}
+
+.about-discription {
+  margin: 0 auto;
+  width: 220px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 50px;
+    width: calc((100%-17px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    width: 463px;
+  }
+}
+
+.about-description__black-text,
+.about-description__text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.58;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.78;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 1.75;
+  }
+}
+.about-description__black-text {
+  margin-bottom: 40px;
+  color: #000000;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 35px;
+  }
+}
+.about-description__text {
+  margin-bottom: 40px;
+  color: var(--contacts-text-color);
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 45px;
+  }
+}
+
+.buttons.about-btn {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 13px 42px;
+  font-family: var(--text-main-font);
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--color-accent);
+  background-color: #fff;
+  transition: background-color var(--transition-time) var(--time-function);
+  @media screen and (min-width: 768px) {
+    font-size: 16px; 
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #ECEBEB;
+  }
+
+  & .arrow {
+      margin-left: 12px;
+  } 
+}
